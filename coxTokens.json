@@ -1,9 +1,236 @@
 {
-  "global": {},
+  "coxGlobal": {
+    "baseline": {
+      "value": {
+        "fontFamily": "Cera Pro",
+        "fontWeight": "400",
+        "fontSize": "1em"
+      },
+      "type": "typography",
+      "description": "Baseline font"
+    },
+    "colors": {
+      "bodyText": {
+        "value": "#202020",
+        "type": "color",
+        "description": "Global body text color for use on white"
+      },
+      "neutral-06": {
+        "value": "#FFFFFF",
+        "type": "color"
+      }
+    },
+    "button": {
+      "value": {
+        "fontFamily": "Cera Pro",
+        "fontWeight": "700"
+      },
+      "type": "typography"
+    },
+    "border": {
+      "border-01": {
+        "value": "1px",
+        "type": "borderWidth"
+      },
+      "border-02": {
+        "value": "2px",
+        "type": "borderWidth"
+      }
+    }
+  },
+  "coxResidential": {
+    "colors": {
+      "primary-01": {
+        "value": "#00AAF4",
+        "type": "color",
+        "description": "Sky Blue"
+      },
+      "primary-02": {
+        "value": "#00D258",
+        "type": "color",
+        "description": "Field Green"
+      },
+      "primaryGradient-01": {
+        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
+        "type": "color",
+        "description": "Sky Blue to Field Green gradient"
+      },
+      "secondary-01": {
+        "value": "#285A98",
+        "type": "color",
+        "description": "River Blue"
+      },
+      "button": {
+        "background": {
+          "primary": {
+            "value": "{colors.secondary-01}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "radius": {
+      "radius-01": {
+        "value": "50px",
+        "type": "borderRadius",
+        "description": "50px radius large for Resi"
+      }
+    },
+    "border": {
+      "button": {
+        "secondary": {
+          "value": {
+            "color": "{colors.primaryGradient-01}",
+            "width": "{border.border-02}"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "coxBusiness": {
+    "colors": {
+      "primary-01": {
+        "value": "#00AAF4",
+        "type": "color",
+        "description": "Sky Blue"
+      },
+      "primary-02": {
+        "value": "#002F87",
+        "type": "color",
+        "description": "Business Navy"
+      },
+      "primaryGradient-01": {
+        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
+        "type": "color"
+      },
+      "button": {
+        "background": {
+          "primary": {
+            "value": "{colors.primary-02}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "primary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "radius": {
+      "radius-01": {
+        "value": "3px",
+        "type": "borderRadius",
+        "description": "Radius 3px small for CB "
+      }
+    },
+    "border": {
+      "button": {
+        "secondary": {
+          "value": {
+            "color": "{colors.primaryGradient-01}",
+            "width": "{border.border-02}"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "coxMobile": {
+    "radius": {
+      "radius-01": {
+        "value": "50",
+        "type": "borderRadius"
+      }
+    },
+    "colors": {
+      "primary-01": {
+        "value": "#03d459",
+        "type": "color",
+        "description": "mobile primary"
+      },
+      "button": {
+        "background": {
+          "primary": {
+            "value": "{colors.primary-01}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "primary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border": {
+      "button": {
+        "secondary": {
+          "value": {
+            "color": "{colors.primary-01}",
+            "width": "{border.border-02}"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "coxFiber": {
+    "radius": {
+      "radius-01": {
+        "value": "12px 0px",
+        "type": "borderRadius"
+      }
+    },
+    "colors": {
+      "primary-01": {
+        "value": "#6d1f7e",
+        "type": "color",
+        "description": "fiber primary"
+      },
+      "button": {
+        "background": {
+          "primary": {
+            "value": "{colors.primary-01}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "primary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        }
+      },
+      "primaryGradient-01": {
+        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
+        "type": "color"
+      },
+      "primary-02": {
+        "value": "#b818a1",
+        "type": "color"
+      }
+    }
+  },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global"
+      "coxGlobal",
+      "coxResidential",
+      "coxBusiness",
+      "coxMobile",
+      "coxFiber"
     ]
   }
 }
