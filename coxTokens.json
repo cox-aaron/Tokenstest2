@@ -1,13 +1,22 @@
 {
   "coxGlobal": {
-    "baseline": {
-      "value": {
-        "fontFamily": "Cera Pro",
-        "fontWeight": "400",
-        "fontSize": "1em"
+    "typography": {
+      "baseline": {
+        "value": {
+          "fontFamily": "Cera Pro",
+          "fontWeight": "400",
+          "fontSize": "1em"
+        },
+        "type": "typography",
+        "description": "Baseline font"
       },
-      "type": "typography",
-      "description": "Baseline font"
+      "button": {
+        "value": {
+          "fontFamily": "Cera Pro",
+          "fontWeight": "700"
+        },
+        "type": "typography"
+      }
     },
     "colors": {
       "bodyText": {
@@ -51,13 +60,6 @@
           }
         }
       }
-    },
-    "button": {
-      "value": {
-        "fontFamily": "Cera Pro",
-        "fontWeight": "700"
-      },
-      "type": "typography"
     },
     "border": {
       "border-01": {
