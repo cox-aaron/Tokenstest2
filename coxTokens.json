@@ -18,6 +18,38 @@
       "neutral-06": {
         "value": "#FFFFFF",
         "type": "color"
+      },
+      "primary01": {
+        "value": "{colors.bodyText}",
+        "type": "color"
+      },
+      "secondary": {
+        "secondary-01": {
+          "value": "#CCCCCC",
+          "type": "color"
+        }
+      },
+      "button": {
+        "background": {
+          "primary": {
+            "value": "{colors.secondary.secondary-01}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "primary": {
+            "value": "{colors.bodyText}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.bodyText}",
+            "type": "color"
+          }
+        }
       }
     },
     "button": {
@@ -35,39 +67,68 @@
       "border-02": {
         "value": "2px",
         "type": "borderWidth"
+      },
+      "button": {
+        "secondary": {
+          "value": {
+            "color": "{colors.secondary.secondary-01}",
+            "width": "2px"
+          },
+          "type": "border"
+        }
+      }
+    },
+    "radius": {
+      "radius-01": {
+        "value": "0",
+        "type": "borderRadius"
       }
     }
   },
   "coxResidential": {
     "colors": {
-      "primary-01": {
-        "value": "#00AAF4",
-        "type": "color",
-        "description": "Sky Blue"
+      "primary": {
+        "primary-01": {
+          "value": "#00AAF4",
+          "type": "color",
+          "description": "Sky Blue"
+        },
+        "primary-02": {
+          "value": "#00D258",
+          "type": "color",
+          "description": "Field Green"
+        },
+        "primaryGradient-01": {
+          "value": "linear-gradient(135deg, {colors.primary.primary-02} 0%, {colors.primary.primary-01} 100%)",
+          "type": "color",
+          "description": "Sky Blue to Field Green gradient"
+        }
       },
-      "primary-02": {
-        "value": "#00D258",
-        "type": "color",
-        "description": "Field Green"
-      },
-      "primaryGradient-01": {
-        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
-        "type": "color",
-        "description": "Sky Blue to Field Green gradient"
-      },
-      "secondary-01": {
-        "value": "#285A98",
-        "type": "color",
-        "description": "River Blue"
+      "secondary": {
+        "secondary-01": {
+          "value": "#285A98",
+          "type": "color",
+          "description": "River Blue"
+        }
       },
       "button": {
         "background": {
           "primary": {
-            "value": "{colors.secondary-01}",
+            "value": "{colors.secondary.secondary-01}",
             "type": "color"
           },
           "secondary": {
             "value": "{colors.neutral-06}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "primary": {
+            "value": "{colors.neutral-06}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.bodyText}",
             "type": "color"
           }
         }
@@ -84,7 +145,7 @@
       "button": {
         "secondary": {
           "value": {
-            "color": "{colors.primaryGradient-01}",
+            "color": "{colors.primary.primaryGradient-01}",
             "width": "{border.border-02}"
           },
           "type": "border"
@@ -94,24 +155,26 @@
   },
   "coxBusiness": {
     "colors": {
-      "primary-01": {
-        "value": "#00AAF4",
-        "type": "color",
-        "description": "Sky Blue"
-      },
-      "primary-02": {
-        "value": "#002F87",
-        "type": "color",
-        "description": "Business Navy"
-      },
-      "primaryGradient-01": {
-        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
-        "type": "color"
+      "primary": {
+        "primary-01": {
+          "value": "#00AAF4",
+          "type": "color",
+          "description": "Sky Blue"
+        },
+        "primary-02": {
+          "value": "#002F87",
+          "type": "color",
+          "description": "Business Navy"
+        },
+        "primaryGradient-01": {
+          "value": "linear-gradient(135deg, {colors.primary.primary-02} 0%, {colors.primary.primary-01} 100%)",
+          "type": "color"
+        }
       },
       "button": {
         "background": {
           "primary": {
-            "value": "{colors.primary-02}",
+            "value": "{colors.primary.primary-02}",
             "type": "color"
           },
           "secondary": {
@@ -123,7 +186,18 @@
           "primary": {
             "value": "{colors.neutral-06}",
             "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.secondary.secondary-01}",
+            "type": "color"
           }
+        }
+      },
+      "secondary": {
+        "secondary-01": {
+          "value": "#285A93",
+          "type": "color",
+          "description": "River Blue"
         }
       }
     },
@@ -138,7 +212,7 @@
       "button": {
         "secondary": {
           "value": {
-            "color": "{colors.primaryGradient-01}",
+            "color": "{colors.primary.primaryGradient-01}",
             "width": "{border.border-02}"
           },
           "type": "border"
@@ -154,21 +228,31 @@
       }
     },
     "colors": {
-      "primary-01": {
-        "value": "#03d459",
-        "type": "color",
-        "description": "mobile primary"
+      "primary": {
+        "primary-01": {
+          "value": "#03d459",
+          "type": "color",
+          "description": "mobile primary"
+        }
       },
       "button": {
         "background": {
           "primary": {
-            "value": "{colors.primary-01}",
+            "value": "{colors.primary.primary-01}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.neutral-06}",
             "type": "color"
           }
         },
         "text": {
           "primary": {
             "value": "{colors.neutral-06}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.primary.primary-01}",
             "type": "color"
           }
         }
@@ -178,7 +262,7 @@
       "button": {
         "secondary": {
           "value": {
-            "color": "{colors.primary-01}",
+            "color": "{colors.primary.primary-01}",
             "width": "{border.border-02}"
           },
           "type": "border"
@@ -194,15 +278,29 @@
       }
     },
     "colors": {
-      "primary-01": {
-        "value": "#6d1f7e",
-        "type": "color",
-        "description": "fiber primary"
+      "primary": {
+        "primary-01": {
+          "value": "#6d1f7e",
+          "type": "color",
+          "description": "fiber primary"
+        },
+        "primaryGradient-01": {
+          "value": "linear-gradient(135deg, {colors.primary.primary-02} 0%, {colors.primary.primary-01} 100%)",
+          "type": "color"
+        },
+        "primary-02": {
+          "value": "#b818a1",
+          "type": "color"
+        }
       },
       "button": {
         "background": {
           "primary": {
-            "value": "{colors.primary-01}",
+            "value": "{colors.primary.primary-01}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.neutral-06}",
             "type": "color"
           }
         },
@@ -210,16 +308,23 @@
           "primary": {
             "value": "{colors.neutral-06}",
             "type": "color"
+          },
+          "secondary": {
+            "value": "{colors.primary.primary-01}",
+            "type": "color"
           }
         }
-      },
-      "primaryGradient-01": {
-        "value": "linear-gradient(135deg, {colors.primary-02} 0%, {colors.primary-01} 100%)",
-        "type": "color"
-      },
-      "primary-02": {
-        "value": "#b818a1",
-        "type": "color"
+      }
+    },
+    "border": {
+      "button": {
+        "secondary": {
+          "value": {
+            "color": "{colors.primary.primaryGradient-01}",
+            "width": "2"
+          },
+          "type": "border"
+        }
       }
     }
   },
